@@ -1,0 +1,28 @@
+header{
+    align-items: center;
+    
+}
+.search-bar{
+   padding-top: 0.5rem;
+//   height: 10vh;
+  display: flex;
+//   border: solid green 2px;
+  justify-content: space-between;
+  margin-left: auto;
+  padding-inline: 2rem;
+
+   &__submit{
+    text-align: center;
+   }
+}
+.search-input{
+   
+    width: 20rem;
+  
+   }
+   
+   .design{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+   }

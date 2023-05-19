@@ -12,10 +12,84 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>test</h1>
+
+    <header class="row"> 
+        <img src="assets/Logo.svg" alt="" class="design col-2"></img>
+        <div class="search-bar col-9">
+        <div class="country"> 
+            <h2 class="country-name">London</h2>
+            <div class="month-day">Feb 03, Tuesday</div>
+        </div>
+    <form id="searchForm" class="row">
+        <input class="search-input col-9" type="text" placeholder="Search" aria-label="search" name="query" id="input">
+        <button class="search-bar__submit col-3" aria-label="submit search">Search</button>
+    </form>
+</div>
+</header>
+
+    <main class="container-fluid">
+       <div class="row weather-container ">
+        <div class="days col-3 "> 
+            <h2> 
+                <span class="month">Feb 01</span>
+                 <span class="day">monday</span>
+            </h2>
+            <h2> 
+                <span class="month">Feb 02</span>
+                 <span class="day">tuesday</span>
+            </h2>
+            <h2> 
+                <span class="month">Feb 03</span>
+                 <span class="day">wednsday</span>
+            </h2>
+            <h2> 
+                <span class="month">Feb 04</span>
+                 <span class="day">thursday</span>
+            </h2>
+            <h2> 
+                <span class="month">Feb 05</span>
+                 <span class="day">friday</span>
+            </h2>
+            
+        </div>
+        
+
+        <div class="weather-info col-9"> 
+
+        <div class="row"> 
+            <div class="weather-title col-8">
+            <h1 class="temperature">15C</h1>
+            <h3>
+                 <span class="time">5:00</span>
+                <span class="weather-status">Heavy Rain</span>
+                </h3>   
+            </div>
+            <img src="assets/moon.svg " alt="" width="200px" height="200px" class="col-4">
+        </div>
+            <div class="weather-detailes row">
+               
+            <div class="col-8 weather-detailes__col wd-col1">
+            <h3 class="feels-like">Feels Like 17C</h3>        
+            <h3 class="min-temp">Minimum temperature 13C</h3>
+            <h3 class="max-temp">Maximum temperature 17C</h3>
+          
+             </div>
+
+             <div class="col-4 weather-detailes__col wd-col2">
+                <h3 class="humidity">Humidity 60%</h3>
+                <h3 class="cloudy">Cloudy 0%</h3>
+                <h3 class="wind-speed">Wind Speed 17C</h3>
+                 </div>
+            </div>
+        </div>
+
+       </div>
+
+    </main>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6WGci9VMgJACipDj_9R2J_Db9B13zJDw&libraries=places"> </script>
     <script src="script.js"></script>
 </body>
 </html>
