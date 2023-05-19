@@ -9,7 +9,7 @@ const h3 = document.createElement('h3')
 const test = document.querySelector('.feels-like')
 const temperature = document.querySelector('.temperature')
 const timeClass = document.querySelector('.time')
-const country = document.querySelector('.country-name')
+const countryName = document.querySelector('.country-name')
 const monthdDay = document.querySelector('.month-day')
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -49,7 +49,7 @@ const data = async (searchTerm) =>{
 
     const humidity= Math.round(res.data.main.humidity);
     const clouds= Math.round(res.data.clouds.all);
-    const wind= Math.round(res.data.wind.speed);
+    const wind= res.data.wind.speed;
 
     const temp= Math.round(res.data.main.temp);
     const icon= res.data.weather.icon;
@@ -58,6 +58,7 @@ console.log(res);
     wdCol2.innerHTML=` <h3>Humidity ${humidity} % </h3> <h3>Clouds ${clouds}%</h3> <h3>Wind ${wind}km/h</h3>`;
   
     temperature.innerHTML=`${temp}&#8451`
+    countryName.innerHTML=`${searchTerm}`
     // temperature.innerHTML=`<img src="${icon}" </img>`
     // console.log(icon)
   
@@ -75,3 +76,5 @@ console.log(res);
         types: ['(cities)']
     }
     const autocomplete = new google.maps.places.Autocomplete(input, options);
+
+    data('cairo')
