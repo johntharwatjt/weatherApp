@@ -145,8 +145,24 @@ header {
   margin: 0 auto;
   width: 100px;
   height: 100px;
+  animation: myfirst 10s infinite;
+  animation-direction: alternate;
 }
 
+@keyframes myfirst {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: 100px;
+  }
+}
 .country h2, .month-day {
   font-family: var(--ff-sec-title);
 }
