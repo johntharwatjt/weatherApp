@@ -1,9 +1,10 @@
 
 $border-radius:20px;
-.col-3 {
+.col-3,.col-md-3 {
     padding-left: 0;
     padding-right: 0;
 }
+
 .days{
     // border: solid red 2px;
     display: flex;
@@ -35,6 +36,9 @@ $border-radius:20px;
     }
   
 }
+.weather-container{
+    flex-direction: row-reverse;
+}
 
 .weather-info {
     // border: solid green 2px;
@@ -65,9 +69,21 @@ $border-radius:20px;
 @media(max-width:770px){
 .days{
 
-
-  justify-content: space-around;
+flex-direction: row;
+ justify-content: space-between;
   align-items: center;
-  flex-wrap:wrap;
+  overflow-x: auto;
+  padding-left: 0px;
+
+  
+    & h2{
+        // border: green 2px solid;
+        padding-inline: 1rem;
+        gap: 1rem;
+        background-color: #4c0b8dbd;
+        font-size: 20px;
+        border: 1px #4c0b8d solid;
+    }
 }
 }
+

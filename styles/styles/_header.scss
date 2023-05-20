@@ -47,6 +47,21 @@ header{
 }
 
 
+@media(max-width:770px){
 
+.search-bar{
+    padding-top: 0.5rem;
+    // padding-inline: -1rem;
+}
+.search-input{width: 10rem;}
+}
+@media(max-width:442px){
+    .search-bar{
+        flex-direction: column;
+    }
+   h3{
+    font-size: 15px;
+   }
+}
 
 
