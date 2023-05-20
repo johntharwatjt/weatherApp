@@ -9,12 +9,16 @@ $border-radius:20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     & h2{
         // border: solid yellow 2px;
         display: flex;
         flex-direction: column;
+        gap: 0.7rem;
         align-items: center;
         padding: 2rem 0rem;
+        font-family: var(--ff-sec-title);
+        
         // border-bottom-right-radius:  $border-radius;
             &:hover{
                 background-color: var(--clr-secondary);
@@ -22,6 +26,11 @@ $border-radius:20px;
               cursor: pointer;
               
             }
+            & .day{
+                color: var(--clr-h2-text);
+                font-size: 19px;
+            }
+         
            
     }
   
@@ -53,3 +62,12 @@ $border-radius:20px;
 }
 
 
+@media(max-width:770px){
+.days{
+
+
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap;
+}
+}

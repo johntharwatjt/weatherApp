@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
 
     <title>Document</title>
@@ -17,19 +20,22 @@
         <img src="assets/Logo.svg" alt="" class="design col-2"></img>
         <div class="search-bar col-9">
         <div class="country"> 
-            <h2 class="country-name">London</h2>
+            <h2 class="country-name">City</h2>
             <div class="month-day">Feb 03, Tuesday</div>
         </div>
     <form id="searchForm" class="row">
-        <input class="search-input col-9" type="text" placeholder="Search" aria-label="search" name="query" id="input">
-        <button class="search-bar__submit col-3" aria-label="submit search">Search</button>
+        <input class="search-input col-9" type="text" placeholder="City" aria-label="search" name="query" id="input">
+        <button class="search-bar__submit col-3" aria-label="submit search">
+            <li class="fa fa-search"></li>
+
+        </button>
     </form>
 </div>
 </header>
 
     <main class="container-fluid">
        <div class="row weather-container ">
-        <div class="days col-3 "> 
+        <div class="days col-md-3 col-12"> 
             <h2> 
                 <span class="month">Feb 01</span>
                  <span class="day">monday</span>
@@ -47,6 +53,7 @@
                  <span class="day">thursday</span>
             </h2>
             <h2> 
+               
                 <span class="month">Feb 05</span>
                  <span class="day">friday</span>
             </h2>
@@ -54,31 +61,32 @@
         </div>
         
 
-        <div class="weather-info col-9"> 
+        <div class="weather-info col-md-9 "> 
 
         <div class="row"> 
-            <div class="weather-title col-8">
-            <h1 class="temperature">15C</h1>
+            <div class="weather-title col-md-8  ">
+            <h1 class="temperature">&#8451</h1>
             <h3>
-                 <span class="time">5:00</span>
+                 <span class="time">00:00</span>
                 <span class="weather-status">Heavy Rain</span>
                 </h3>   
             </div>
-            <img src="assets/moon.svg " alt="" width="200px" height="200px" class="col-4">
+           <div class="sun-moon col-4"> <img src="assets/moon.svg " alt="" width="200px" height="200px">
+           </div>
         </div>
             <div class="weather-detailes row">
                
             <div class="col-8 weather-detailes__col wd-col1">
-            <h3 class="feels-like">Feels Like 17C</h3>        
-            <h3 class="min-temp">Minimum temperature 13C</h3>
-            <h3 class="max-temp">Maximum temperature 17C</h3>
+            <h3 class="feels-like">Feels Like &#8451</h3>        
+            <h3 class="min-temp">Minimum temperature &#8451</h3>
+            <h3 class="max-temp">Maximum temperature &#8451</h3>
           
              </div>
 
              <div class="col-4 weather-detailes__col wd-col2">
-                <h3 class="humidity">Humidity 60%</h3>
+                <h3 class="humidity">Humidity %</h3>
                 <h3 class="cloudy">Cloudy 0%</h3>
-                <h3 class="wind-speed">Wind Speed 17C</h3>
+                <h3 class="wind-speed">Wind Speed km/h</h3>
                  </div>
             </div>
         </div>
