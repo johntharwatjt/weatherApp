@@ -97,7 +97,7 @@ const data = async (searchTerm,num=0) =>{
         for(let i=1;i<=5;i++){
         let newDate=date+i;
         daysClass.innerHTML+=
-        ` <h2 class="future${i}"> 
+        ` <h2> 
         <span class="month">${month} ${newDate}</span>
          <span class="day">${day}</span>
         </h2>
@@ -119,7 +119,8 @@ const futerFunc = function(searchTerm='cairo'){
 //-------------------------------------------------------     
        
 
-
+       
+//----------------Setting World time Api--------------------------
 const dateTime = async(lat,lon)=>{
     try{
     const result = await axios.get(`https://api.ipgeolocation.io/timezone?apiKey=${clockApiKey}&lat=${lat}&long=${lon}`)
@@ -137,4 +138,4 @@ const dateTime = async(lat,lon)=>{
     catch(e){
         return('Time is not available right now')
     }
-}
+}//------------------------------------------------------- 
