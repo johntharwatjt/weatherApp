@@ -125,9 +125,10 @@ const dateTime = async(lat,lon)=>{
     try{
     const result = await axios.get(`https://api.ipgeolocation.io/timezone?apiKey=${clockApiKey}&lat=${lat}&long=${lon}`)
     const time12 =result.data.time_12;
+    const time24 =result.data.time_24;
     timeClass.innerHTML=time12;
     
-    if(time12[1]<7){
+    if(time24[1]>6 && time24[1]<19){
         sunMoon.innerHTML='<img src="assets/sun.svg " alt="" width="200px" height="200px" sun-moon">'
         
     } else {
