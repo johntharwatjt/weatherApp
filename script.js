@@ -128,11 +128,11 @@ const dateTime = async(lat,lon)=>{
     const time24 =result.data.time_24;
     timeClass.innerHTML=time12;
     
-    if(time24[1]>6 && time24[1]<19){
+    if(time24[1]<6 && time24[1]<19){
         sunMoon.innerHTML='<img src="assets/sun.svg " alt="" width="200px" height="200px" sun-moon">'
         
     } else {
-        sunMoon.innerHTML='<img src="assets/moon.svg " alt="" width="200px" height="200px" sun-moon">'
+        sunMoon.innerHTML='<img src="assets/moon`.svg " alt="" width="200px" height="200px" sun-moon">'
         
     }
     }
