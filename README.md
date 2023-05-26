@@ -4,7 +4,7 @@ To display weather information for a specific city
 
 ## Description
 
-* using google places API,OpernWeather API and Time API
+* using google places API,OpenWeather API and Time API
 
 ## Main Features
 
