@@ -178,7 +178,7 @@ darkMode.addEventListener("click", () => {
     img.src = "assets/Logo.svg";
     darkLight.src = "assets/light-mode.svg";
   } else {
-    img.src = "assets/logo-darkmode.svg";
+    img.src = "assets/logo-darkmode.png";
     darkLight.src = "assets/dark-mode.svg";
   }
 });
